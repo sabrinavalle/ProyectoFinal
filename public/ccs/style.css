@@ -1,0 +1,332 @@
+h
+{color: black;/*secundario*/
+color: #fff;/*secundario*/
+color: rgb(128, 4, 4);/*primario*/
+color: red;/*primario claro*/}
+
+/*estilos comunes*/
+
+* {box-sizing:border-box;}
+
+body {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    background-color:  rgb(128, 4, 4) ;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+/* header */
+
+header {
+    font-family: 'cursive';
+    border-radius: 5px;
+}
+
+
+/*navbar*/
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+    background-color: black;
+    top: 0;
+    border-style: inset outset;
+    border-width: 7px;
+    border-color: rgb(128, 4, 4);
+}
+
+nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+}
+    
+nav a:hover {
+    background-color: red;
+}
+
+/*principal*/
+.principal {
+    display: flex;
+    flex-wrap:nowrap;
+    background-color: rgb(128, 4, 4);
+    padding: 0%;
+}
+
+
+aside {
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    flex-direction:column;
+    padding: 20px;
+    background-color: black;
+    text-align:left;
+    color: white;
+    }
+
+aside a {
+    text-decoration:overline;
+    color: white;
+}
+
+
+main {
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgb(128, 4, 4);
+    text-align: left;
+    color: white;
+}
+
+main a { 
+    text-decoration:overline;
+    color: white;
+}
+
+article{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/*cards*/
+.music{
+    background-color: black;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+}
+
+.music1{background-color:#fff;
+padding: 10px;
+border-radius: 10px;}
+
+.music1 a {color:black;
+text-decoration: none;
+font-weight: bolder;}
+
+.music1 a:hover {color:red}
+
+.resumen{
+    display: grid;
+    grid-auto-flow:row;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto ;
+    justify-content: center;
+    justify-items: center;
+    grid-column-start: span 4;
+    grid-row: 1 / 2;
+    grid-gap: 20px;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    padding: 15px 15px;
+    cursor: pointer;
+    text-align: center;    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.5s;
+    align-content: center;
+} 
+
+
+.card1{background-image: url(../img/Wes\ Anderson’s\ 12\ favourite\ arthouse\ films\ of\ all\ time.jpeg);}
+.card2{background-image: url(../img/mia\ goth\ as\ maxine.jpeg);} 
+.card3{background-image: url(../img/the-midnight-gospel);}
+
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.quote{
+    padding: 2px;
+    border-radius: 10px;
+    color:#fff;
+    .blockquote-mb-0{font-weight: bolder;}
+}
+
+.flex-container { 
+    display: flex;
+}
+
+/* estilo form*/
+form {
+    padding: 40px;
+    background-color: black;
+    border: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+legend{ text-align: center;
+padding: 30px;}
+
+label {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 20vw 30vw ;
+    gap: 40px;
+    margin: auto;
+    width:fit-content;
+    font-size: 1.2rem;
+}
+
+/*estilos para titulos*/
+.title {font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size:80px;
+    color: white; 
+}
+
+.asidetitle {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+}
+
+.maintitle{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: white;
+    margin: 0% 0% 0%;}
+
+h3 {font-family: 'Franklin Gothic smaller';}
+
+h5 {font-family: Arial, Helvetica, sans-serif, small}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    padding: 2rem 8%;
+    bottom: 0;
+    left:0;
+    background-color: black;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color:#fff;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin:1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color:#fff;
+    opacity: 0.3;
+    text-align: center;
+}
+
+@media (min-width:500px){
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 40px;
+    background-image: url(../img/red.png);
+    background-size: cover;
+    background-repeat: no-repeat;}}
+
+@media (max-width:499.9px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 20px;
+        background-image: url(../img/red.png);
+        background-size: cover;
+        background-repeat:no-repeat;
+    }
+    .title {
+        font-size: 50px;
+    }
+    }
+
+    
+
+@media (max-width:800px) {
+    .principal {
+        flex-direction: column;}
+}
+
+@media (max-width:500px) {
+    nav {
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        position:unset;}
+
+    nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: unset;}
+}
+
+@media (max-width:600px) {
+    .flex-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0px;
+    }
+}
+
+@media (max-width:600px)
+{
+.resumen{
+    display: grid;
+    grid-auto-flow:column;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+}
